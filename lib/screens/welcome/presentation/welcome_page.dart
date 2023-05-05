@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:recomondo/core/widgets/button_custom_widget.dart';
 import 'package:recomondo/core/widgets/text_custom_widget.dart';
+import 'package:recomondo/screens/auth/signup_page.dart';
 import 'package:recomondo/screens/welcome/presentation/widgets/welcome_message_widget.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -62,7 +63,13 @@ class WelcomePage extends StatelessWidget {
           ),
           ButtonCustomWidget(
             buttonText: "Sign Up",
-            callback: () {},
+            callback: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SignupPage(),
+                  ));
+            },
           ),
           SizedBox(
             height: 10.h,
