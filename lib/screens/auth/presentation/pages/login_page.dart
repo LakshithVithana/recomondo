@@ -5,8 +5,8 @@ import 'package:recomondo/core/widgets/button_custom_widget.dart';
 import 'package:recomondo/core/widgets/text_custom_widget.dart';
 import 'package:recomondo/core/widgets/text_field_custom.dart';
 
-class SignupPage extends StatelessWidget {
-  const SignupPage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,12 @@ class SignupPage extends StatelessWidget {
           ),
           onPressed: () {
             // Implement back button functionality here
+            Navigator.pop(context);
           },
         ),
         backgroundColor: mainGreyColor,
         title: Text(
-          "Sign Up",
+          "Log In",
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
@@ -40,27 +41,12 @@ class SignupPage extends StatelessWidget {
         child: Column(
           children: [
             TextCustomWidget(
-                marginTop: 27.h,
-                marginBottom: 30.h,
-                text:
-                    "Join RecoMondo today and start discovering the world through the eyes of your loved ones!"),
-            TextFieldCustom(
-              hintText: "First Name",
-              margins: EdgeInsets.only(
-                bottom: 10.h,
-              ),
-            ),
-            TextFieldCustom(
-              hintText: "Last Name",
-              margins: EdgeInsets.only(
-                bottom: 10.h,
-              ),
-            ),
-            TextFieldCustom(
-              hintText: "About",
-              margins: EdgeInsets.only(
-                bottom: 25.h,
-              ),
+              marginTop: 27.h,
+              marginBottom: 30.h,
+              text:
+                  "Welcome back to RecoMondo! Log in to your account and continue exploring the world with the help of your friends and family.",
+              fontSize: 16.sp,
+              textAlign: TextAlign.center,
             ),
             TextFieldCustom(
               hintText: "Email",
@@ -75,14 +61,14 @@ class SignupPage extends StatelessWidget {
               ),
             ),
             ButtonCustomWidget(
-              buttonText: "Sign Up",
+              buttonText: "Log In",
               callback: () {},
               margins: EdgeInsets.only(
                 bottom: 40.h,
               ),
             ),
             ButtonCustomWidget(
-              buttonText: "Sign Up using Google",
+              buttonText: "Log In using Google",
               callback: () {},
               iconAssetUrl: "assets/images/google_logo.png",
               margins: EdgeInsets.only(
@@ -90,7 +76,7 @@ class SignupPage extends StatelessWidget {
               ),
             ),
             ButtonCustomWidget(
-              buttonText: "Sign Up using Facebook",
+              buttonText: "Log In using Facebook",
               callback: () {},
               margins: EdgeInsets.zero,
               iconAssetUrl: "assets/images/facebook_logo.png",
