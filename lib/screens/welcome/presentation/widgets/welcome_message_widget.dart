@@ -11,11 +11,12 @@ class WelcomeMessageWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: 40.w,
+        vertical: 20.h,
       ),
       child: Column(
         children: [
           ContainerCustom(
-            height: 300.h,
+            height: 200.h,
             width: 300.h,
             bgColor: const Color(0xffDEDEDE),
             borderRadius: BorderRadius.circular(
