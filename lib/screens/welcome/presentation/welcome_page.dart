@@ -66,7 +66,7 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 76.h,
+            height: 60.h,
           ),
           ButtonCustomWidget(
             buttonText: "Sign Up",
@@ -91,7 +91,7 @@ class WelcomePage extends StatelessWidget {
                     ));
               }),
           SizedBox(
-            height: 10.h,
+            height: 20.h,
           ),
         ],
       ),
