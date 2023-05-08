@@ -7,6 +7,8 @@ import 'package:recomondo/screens/auth/presentation/pages/login_page.dart';
 import 'package:recomondo/screens/auth/presentation/pages/signup_page.dart';
 import 'package:recomondo/screens/welcome/presentation/widgets/welcome_message_widget.dart';
 
+import '../../../constants/app_constants.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
 
@@ -55,12 +57,16 @@ class WelcomePage extends StatelessWidget {
             child: Swiper(
               itemCount: 5,
               itemBuilder: (context, index) => const WelcomeMessageWidget(),
-              pagination: const DotSwiperPaginationBuilder(),
-              // control: const SwiperControl(),
+              pagination: const SwiperPagination(
+                builder: DotSwiperPaginationBuilder(
+                  activeColor: buttonColor,
+                  color: mainGreyColor,
+                ),
+              ),
             ),
           ),
           SizedBox(
-            height: 76.h,
+            height: 60.h,
           ),
           ButtonCustomWidget(
             buttonText: "Sign Up",
@@ -85,7 +91,7 @@ class WelcomePage extends StatelessWidget {
                     ));
               }),
           SizedBox(
-            height: 10.h,
+            height: 20.h,
           ),
         ],
       ),
