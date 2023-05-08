@@ -59,7 +59,7 @@ class WelcomePage extends StatelessWidget {
               itemBuilder: (context, index) => const WelcomeMessageWidget(),
               pagination: const SwiperPagination(
                 builder: DotSwiperPaginationBuilder(
-                  activeColor: buttonColor,
+                  activeColor: Colors.red,
                   color: mainGreyColor,
                 ),
               ),

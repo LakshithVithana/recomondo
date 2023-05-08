@@ -15,7 +15,12 @@ class AdvertisementWidget extends StatelessWidget {
       height: isLarge == true ? 113.h : 37.h,
       color: secondaryFontColor,
       alignment: Alignment.center,
-      child: const Text("ADVERTISEMENT"),
+      child: const Text(
+        "ADVERTISEMENT",
+        style: TextStyle(
+          color: Colors.white,
+        ),
+      ),
     );
   }
 }
