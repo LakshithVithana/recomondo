@@ -175,9 +175,9 @@ class RecomendationWidget extends StatelessWidget {
                     )),
               ],
             ),
-            SizedBox(
-              height: 15.h,
-            ),
+            // SizedBox(
+            //   height: 5.h,
+            // ),
             const Divider(),
           ],
         ),

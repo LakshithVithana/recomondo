@@ -22,7 +22,7 @@ class _AddALocationPageState extends State<AddALocationPage> {
       appBar: AppBar(
         backgroundColor: mainGreyColor,
         title: const Text(
-          "Add Alocation",
+          "Add Location",
           style: TextStyle(
             color: Colors.black,
           ),
@@ -94,15 +94,22 @@ class _AddALocationPageState extends State<AddALocationPage> {
                   }).toList(),
                 ),
               ),
-              TextCustomWidget(
-                text: "Select from the map",
-                textStyle: TextStyle(
-                    fontSize: 10.sp,
-                    fontWeight: FontWeight.w400,
-                    color: accentColor),
-                marginTop: 15.h,
-                marginBottom: 5.h,
-                containerAlignment: Alignment.centerRight,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(
+                    onPressed: () {},
+                    child: TextCustomWidget(
+                      text: "Select from the map",
+                      textStyle: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w400,
+                          color: accentColor),
+                      marginTop: 15.h,
+                      marginBottom: 5.h,
+                    ),
+                  ),
+                ],
               ),
               TextFieldCustom(
                 fillColor: mainGreyColor,
@@ -198,20 +205,37 @@ class _AddALocationPageState extends State<AddALocationPage> {
                   bottom: 10.h,
                 ),
               ),
-              TextCustomWidget(
-                text: "GPS Coordinates",
-                textStyle: TextStyle(
-                  fontSize: 12.sp,
-                  fontWeight: FontWeight.w400,
-                ),
-                marginTop: 20.h,
-                marginBottom: 10.h,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  TextCustomWidget(
+                    text: "GPS Coordinates",
+                    textStyle: TextStyle(
+                      fontSize: 12.sp,
+                      fontWeight: FontWeight.w400,
+                    ),
+                    marginTop: 20.h,
+                    marginBottom: 10.h,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: TextCustomWidget(
+                      text: "Select from the map",
+                      textStyle: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w400,
+                          color: accentColor),
+                      marginTop: 15.h,
+                      marginBottom: 5.h,
+                    ),
+                  ),
+                ],
               ),
               Row(
                 children: [
                   Expanded(
                     child: TextFieldCustom(
-                      hintText: "Telephone",
+                      hintText: "Latitude",
                       fillColor: mainGreyColor,
                       margins: EdgeInsets.only(
                         bottom: 10.h,
@@ -229,7 +253,7 @@ class _AddALocationPageState extends State<AddALocationPage> {
                   ),
                   Expanded(
                     child: TextFieldCustom(
-                      hintText: "Telephone",
+                      hintText: "Longitude",
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(10.h),
                         bottomRight: Radius.circular(10.h),
@@ -264,9 +288,23 @@ class _AddALocationPageState extends State<AddALocationPage> {
                 alignment: Alignment.center,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Icon(Icons.add),
-                    TextCustomWidget(text: "Add"),
+                  children: [
+                    // const Icon(Icons.add),
+                    // const TextCustomWidget(text: "Add"),
+                    SizedBox(
+                      height: 40.0.h,
+                      child: TextButton(
+                        onPressed: () {},
+                        child: TextCustomWidget(
+                          text: "+ Add",
+                          textStyle: TextStyle(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w400,
+                            color: mainOrangeColor,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

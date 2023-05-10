@@ -90,6 +90,7 @@ class SinglePostPage extends StatelessWidget {
                           ),
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Row(
                               children: [
@@ -110,7 +111,6 @@ class SinglePostPage extends StatelessWidget {
                               children: [
                                 const Icon(Icons.star, size: 15),
                                 const Icon(Icons.star, size: 15),
-                                const Icon(Icons.star, size: 15),
                                 Container(
                                   margin: EdgeInsets.only(
                                     left: 16.w,
@@ -123,8 +123,6 @@ class SinglePostPage extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                const Icon(Icons.star, size: 15),
-                                const Icon(Icons.star, size: 15),
                                 const Icon(Icons.star, size: 15),
                                 Container(
                                   margin: EdgeInsets.only(
@@ -156,11 +154,10 @@ class SinglePostPage extends StatelessWidget {
                       height: 170.h,
                       child: Swiper(
                         itemCount: 4,
-                        // loop: false,
                         itemBuilder: (context, index) {
                           return const UserRatingWidget();
                         },
-                        viewportFraction: .7,
+                        viewportFraction: .8,
                       ),
                     ),
                     SizedBox(height: 10.h),

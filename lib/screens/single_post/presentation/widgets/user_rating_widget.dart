@@ -9,7 +9,7 @@ class UserRatingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 116.h,
+      height: 100.h,
       decoration: BoxDecoration(
           color: mainGreyColor,
           borderRadius: BorderRadius.circular(

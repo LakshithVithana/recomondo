@@ -17,18 +17,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: mainOrangeColor,
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const AddALocationPage(),
-              ));
-        },
-        child: const Icon(
-          Icons.add,
-          size: 50,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: 100.0),
+        child: FloatingActionButton(
+          backgroundColor: mainOrangeColor,
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AddALocationPage(),
+                ));
+          },
+          child: const Icon(
+            Icons.add,
+            size: 50,
+          ),
         ),
       ),
       appBar: AppBar(
@@ -77,6 +80,7 @@ class _HomePageState extends State<HomePage> {
               AdvertisementWidget(
                 isLarge: true,
               ),
+              const Divider(),
               const RecomendationWidget(),
               const RecomendationWidget(),
             ],

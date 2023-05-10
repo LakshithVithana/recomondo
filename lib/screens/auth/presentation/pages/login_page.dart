@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:recomondo/constants/app_constants.dart';
+import 'package:recomondo/core/pages/main_view.dart';
 import 'package:recomondo/core/widgets/button_custom_widget.dart';
 import 'package:recomondo/core/widgets/text_custom_widget.dart';
 import 'package:recomondo/core/widgets/text_field_custom.dart';
-import 'package:recomondo/screens/home/presentation/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -67,7 +67,7 @@ class LoginPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const MainView(),
                     ));
               },
               margins: EdgeInsets.only(
