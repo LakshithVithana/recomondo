@@ -31,6 +31,7 @@ class _FiltersWidgetState extends State<FiltersWidget> {
                   style: BorderStyle.solid,
                   // width: 0.80
                 ),
+                color: Colors.white,
               ),
               child: DropdownButton<String>(
                 value: dropdownValue,
@@ -68,6 +69,7 @@ class _FiltersWidgetState extends State<FiltersWidget> {
                     style: BorderStyle.solid,
                     // width: 0.80
                   ),
+                  color: Colors.white,
                 ),
                 child: Row(
                   children: [
@@ -97,6 +99,7 @@ class _FiltersWidgetState extends State<FiltersWidget> {
                   style: BorderStyle.solid,
                   // width: 0.80
                 ),
+                color: Colors.white,
               ),
               child: DropdownButton<String>(
                 value: dropdownValue,
@@ -134,6 +137,7 @@ class _FiltersWidgetState extends State<FiltersWidget> {
                   style: BorderStyle.solid,
                   // width: 0.80
                 ),
+                color: Colors.white,
               ),
               child: DropdownButton<String>(
                 value: dropdownValue,

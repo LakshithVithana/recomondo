@@ -147,6 +147,7 @@ class _TextFieldCustomState extends State<TextFieldCustom> {
           //   ),
           // ),
           suffixIcon: widget.suffixIcon,
+          prefixIcon: Icon(widget.prefixIcon),
           // prefixIconConstraints: const BoxConstraints(
           //   minWidth: 25,
           //   minHeight: 25,
